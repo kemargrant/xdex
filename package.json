@@ -1,0 +1,35 @@
+{
+  "name": "xdex",
+  "version": "1.0.3",
+  "description": "multi-dex",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "@cityofzion/neon-js": "^3.10.1",
+    "bignumber": "^1.1.0",
+    "bignumber.js": "^7.2.1",
+    "json-stable-stringify": "^1.0.1"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "nyc": "^13.0.1"
+  },
+  "scripts": {
+    "test": "nyc mocha tests/tests.js --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kemargrant/xdex.git"
+  },
+  "keywords": [
+    "xdex","switcheo"
+  ],
+  "author": "c4d",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kemargrant/xdex/issues"
+  },
+  "homepage": "https://github.com/kemargrant/xdex#readme"
+}
