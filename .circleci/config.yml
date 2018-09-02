@@ -11,9 +11,12 @@ jobs:
           - v1-dependencies-{{ checksum "package.json" }}
           - v1-dependencies-      
       - run: npm install
+      - run: npm install codecov
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}  
       - run: npm test 
+      - run: istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
+      - run: codecov
 
