@@ -1,6 +1,6 @@
 version: 2
 jobs:    
-  test:
+  build:
     docker:
       - image: circleci/node:8.10
     working_directory: ~/xdex
@@ -16,11 +16,5 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}  
       - run: npm test 
-workflows:
-  version: 2
-  deploy:
-    jobs:
-      - test:
-          filters:
-            branches:
-              only: master
+      - run: istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
+      - run: codecov
