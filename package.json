@@ -4,7 +4,7 @@
   "description": "multi-dex",
   "main": "index.js",
   "directories": {
-    "test": "tests"
+    "test": "test"
   },
   "dependencies": {
     "@cityofzion/neon-js": "^3.10.1",
@@ -18,7 +18,8 @@
     "nyc": "^13.0.1"
   },
   "scripts": {
-    "test": "nyc mocha tests/tests.js --exit"
+    "test": "nyc mocha test/ --exit",
+    "coverage":"nyc --reporter=lcov --reporter=text-lcov mocha test"
   },
   "repository": {
     "type": "git",
