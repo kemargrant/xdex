@@ -13,6 +13,7 @@
     "json-stable-stringify": "^1.0.1"
   },
   "devDependencies": {
+    "istanbul": "^0.4.5",
     "mocha": "^5.2.0",
     "nyc": "^13.0.1"
   },
@@ -24,7 +25,8 @@
     "url": "git+https://github.com/kemargrant/xdex.git"
   },
   "keywords": [
-    "xdex","switcheo"
+    "xdex",
+    "switcheo"
   ],
   "author": "c4d",
   "license": "MIT",
