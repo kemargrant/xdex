@@ -19,7 +19,7 @@
   },
   "scripts": {
     "test": "nyc mocha test/ --exit",
-    "coverage":"nyc --reporter=lcov --reporter=text-lcov mocha test"
+    "coverage":"nyc --reporter=lcov --reporter=text-lcov mocha test && codecov"
   },
   "repository": {
     "type": "git",
