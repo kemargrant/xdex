@@ -1,4 +1,5 @@
-
+[![codecov](https://codecov.io/gh/kemargrant/xdex/branch/master/graph/badge.svg)](https://codecov.io/gh/kemargrant/xdex)
+[![CircleCI](https://circleci.com/gh/kemargrant/xdex.svg?style=svg)](https://circleci.com/gh/kemargrant/xdex)
 # Testing
 git clone https://github.com/kemargrant/xdex   
 
